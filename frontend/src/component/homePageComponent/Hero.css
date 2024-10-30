@@ -1,0 +1,48 @@
+.Hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Hero .searchbar p {
+    padding: 0 !important;
+    font-size: 35px;
+}
+
+.Hero .searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.Hero .searchinput .input{
+    border: none ;
+    background-color: transparent !important;
+}
+
+.Hero .searchbar .searchinput {
+    border: 1px gray solid;
+    width: 500px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 25px;
+}
+.Hero .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.Hero .cards .card {
+    width: 100%;
+    border: .5px rgb(120, 120, 120) solid  !important;
+    box-shadow: none;
+}
+
+.Hero .cards .card:first-child {
+    grid-column: span 2; /* تجعل الصورة الأولى تمتد على عمودين */
+    grid-row: span 2; /* تجعل الصورة الأولى تمتد على صفين */
+}
+
